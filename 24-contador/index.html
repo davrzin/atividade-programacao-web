@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contador | Questão 24</title>
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="pagina pagina-estreita cabecalho">
+    <p class="faixa">
+      <span class="selo">Questão 24</span>
+      <a class="voltar" href="../index.html">Voltar aos exercícios</a>
+    </p>
+    <h1>Contador</h1>
+    <p class="introducao">O valor fica vermelho em zero e verde quando passa de dez.</p>
+  </header>
+
+  <main class="pagina pagina-estreita">
+    <section class="painel contador" aria-label="Contador interativo">
+      <output id="numero" class="valor" aria-label="Valor do contador">0</output>
+      <div class="acoes">
+        <button class="botao" id="aumentar" type="button" aria-label="+ Aumentar">+</button>
+        <button class="botao botao-secundario" id="diminuir" type="button" aria-label="− Diminuir">−</button>
+        <button class="botao botao-secundario" id="zerar" type="button">Zerar</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

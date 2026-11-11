@@ -1,0 +1,28 @@
+.contador {
+  text-align: center;
+}
+
+.contador .acoes {
+  justify-content: center;
+}
+
+.contador .botao {
+  min-width: 3.25rem;
+}
+
+.valor {
+  display: block;
+  font-family: var(--fonte-mono);
+  font-size: clamp(3.5rem, 13vw, 6rem);
+  font-variant-numeric: tabular-nums;
+  font-weight: 750;
+  line-height: 1.1;
+}
+
+.zero {
+  color: var(--cor-erro);
+}
+
+.maior-que-dez {
+  color: var(--cor-acerto);
+}

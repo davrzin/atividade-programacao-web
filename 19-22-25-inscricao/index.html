@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulário de inscrição | Questões 19, 22 e 25</title>
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="pagina pagina-estreita cabecalho">
+    <p class="faixa">
+      <span class="selo">Questões 19, 22 e 25</span>
+      <a class="voltar" href="../index.html">Voltar aos exercícios</a>
+    </p>
+    <h1>Formulário de inscrição</h1>
+    <p class="introducao">Preencha seus dados e escolha um curso. Os campos com asterisco são obrigatórios.</p>
+  </header>
+
+  <main class="pagina pagina-estreita">
+    <form id="inscricao" class="painel" novalidate>
+      <fieldset class="grupo">
+        <legend>Dados pessoais</legend>
+        <div class="campo">
+          <label for="nome">Nome completo <span aria-hidden="true">*</span></label>
+          <input class="controle" id="nome" name="nome" type="text" required minlength="3"
+            autocomplete="name" placeholder="Digite seu nome" aria-describedby="erro-nome">
+          <p class="erro" id="erro-nome" aria-live="polite"></p>
+        </div>
+
+        <div class="grade-campos dados-adicionais">
+          <div class="campo">
+            <label for="email">E-mail <span aria-hidden="true">*</span></label>
+            <input class="controle" id="email" name="email" type="email" required
+              autocomplete="email" placeholder="nome@exemplo.com" aria-describedby="erro-email">
+            <p class="erro" id="erro-email" aria-live="polite"></p>
+          </div>
+          <div class="campo">
+            <label for="nascimento">Data de nascimento</label>
+            <input class="controle" id="nascimento" name="nascimento" type="date"
+              autocomplete="bday" aria-describedby="erro-nascimento">
+            <p class="erro" id="erro-nascimento" aria-live="polite"></p>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <label for="curso">Curso</label>
+        <select class="controle" id="curso" name="curso">
+          <option value="programacao-web">Programação Web</option>
+          <option value="design-digital">Design Digital</option>
+          <option value="banco-de-dados">Banco de Dados</option>
+        </select>
+      </div>
+
+      <fieldset class="grupo">
+        <legend>Turno</legend>
+        <div class="opcoes">
+          <div class="opcao">
+            <input id="manha" name="turno" type="radio" value="manha">
+            <label for="manha">Manhã</label>
+          </div>
+          <div class="opcao">
+            <input id="tarde" name="turno" type="radio" value="tarde">
+            <label for="tarde">Tarde</label>
+          </div>
+          <div class="opcao">
+            <input id="noite" name="turno" type="radio" value="noite">
+            <label for="noite">Noite</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <label for="observacoes">Observações</label>
+        <textarea class="controle" id="observacoes" name="observacoes" rows="3"></textarea>
+      </div>
+
+      <div>
+        <div class="opcao">
+          <input id="termos" name="termos" type="checkbox" value="aceitos" required
+            aria-describedby="erro-termos">
+          <label for="termos">Aceito os termos <span aria-hidden="true">*</span></label>
+        </div>
+        <p class="erro" id="erro-termos" aria-live="polite"></p>
+      </div>
+
+      <div>
+        <button class="botao" type="submit">Enviar inscrição</button>
+        <p class="sucesso" id="sucesso" role="status"></p>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

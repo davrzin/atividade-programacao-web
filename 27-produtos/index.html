@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produtos e estoque | Questão 27</title>
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="pagina cabecalho">
+    <p class="faixa">
+      <span class="selo">Questão 27</span>
+      <a class="voltar" href="../index.html">Voltar aos exercícios</a>
+    </p>
+    <h1>Produtos e estoque</h1>
+    <p class="introducao">Cinco operações sobre o mesmo estoque, com <code>map</code>, <code>filter</code> e <code>reduce</code>.</p>
+  </header>
+
+  <main class="pagina">
+    <ol class="resultados" aria-label="Resultados das cinco operações">
+      <li class="painel">
+        <span class="selo">1 · map</span>
+        <h2>Nomes em maiúsculas</h2>
+        <p id="nomes"></p>
+      </li>
+      <li class="painel">
+        <span class="selo">2 · filter</span>
+        <h2>Produtos com estoque</h2>
+        <ul id="disponiveis"></ul>
+      </li>
+      <li class="painel">
+        <span class="selo">3 · reduce</span>
+        <h2>Valor total em estoque</h2>
+        <p class="total" id="valor-total"></p>
+      </li>
+      <li class="painel">
+        <span class="selo">4 · reduce</span>
+        <h2>Produtos por categoria</h2>
+        <dl id="categorias"></dl>
+      </li>
+      <li class="painel">
+        <span class="selo">5 · map</span>
+        <h2>Preços formatados</h2>
+        <ul id="precos"></ul>
+      </li>
+    </ol>
+  </main>
+</body>
+</html>

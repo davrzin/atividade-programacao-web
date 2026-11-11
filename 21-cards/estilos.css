@@ -1,0 +1,50 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1 1 16rem;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--cor-borda);
+  border-radius: 0.3rem;
+  background: var(--cor-superficie);
+  box-shadow: var(--sombra);
+  transition: transform 0.25s ease;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: translateY(-4px);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 5;
+  border-bottom: 1px solid var(--cor-borda);
+  object-fit: cover;
+}
+
+.card-conteudo {
+  padding: 1.15rem;
+}
+
+.card-conteudo h2 {
+  font-family: var(--fonte-titulo);
+}
+
+.preco {
+  margin: 0.45rem 0 0.9rem;
+  color: var(--cor-primaria);
+  font: 700 1.05rem var(--fonte-mono);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+}

@@ -1,0 +1,73 @@
+#inscricao {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.grupo {
+  min-width: 0;
+  margin: 0;
+  padding: 0.65rem 0 0.35rem;
+  border: 0;
+  border-top: 1px solid var(--cor-borda);
+}
+
+.grupo legend {
+  padding: 0 0.55rem 0 0;
+  color: var(--cor-primaria);
+  font-family: var(--fonte-mono);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.dados-adicionais {
+  margin-top: 0.85rem;
+}
+
+.opcoes,
+.opcao {
+  display: flex;
+  align-items: center;
+}
+
+.opcoes {
+  flex-wrap: wrap;
+  gap: 0.65rem 1.5rem;
+}
+
+.opcao {
+  gap: 0.45rem;
+}
+
+.opcao input {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0;
+  accent-color: var(--cor-primaria);
+}
+
+.opcao label {
+  cursor: pointer;
+}
+
+textarea.controle {
+  display: block;
+  resize: vertical;
+}
+
+.controle.editado:invalid {
+  border-color: var(--cor-erro);
+}
+
+.controle.editado:valid {
+  border-color: var(--cor-acerto);
+}
+
+.sucesso {
+  margin: 0;
+  color: var(--cor-acerto);
+  font-weight: 700;
+}
+
+.sucesso:not(:empty) {
+  margin-top: 0.6rem;
+}

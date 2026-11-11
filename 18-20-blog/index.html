@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ponto e Vírgula | Blog</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header id="inicio" class="cabecalho">
+    <section class="limite">
+      <p class="identificacao">
+        <span>Questões 18 e 20</span>
+        <a href="../index.html">Voltar aos exercícios</a>
+      </p>
+      <h1>Ponto e Vírgula</h1>
+      <p class="linha-fina">Um blog sobre HTML e CSS, com exemplos curtos.</p>
+      <nav aria-label="Menu do blog">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#artigos">Artigos</a></li>
+          <li><a href="#populares">Populares</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main id="artigos" class="limite conteudo">
+    <section aria-labelledby="titulo-artigos">
+      <h2 id="titulo-artigos">Artigos recentes</h2>
+      <article id="html-semantico">
+        <h3>HTML com sentido</h3>
+        <time datetime="2026-10-19">19 de outubro de 2026</time>
+        <p>Neste blog, <code>main</code> reúne o conteúdo principal, <code>article</code> separa cada post e <code>nav</code> agrupa os links do menu. Os nomes das tags ajudam a entender a página só de ler o HTML.</p>
+      </article>
+      <article id="flexbox">
+        <h3>Um menu lado a lado</h3>
+        <time datetime="2026-10-21">21 de outubro de 2026</time>
+        <p>O menu daqui usa <code>display: flex</code> na lista para colocar os links na mesma linha. O <code>gap</code> controla o espaço entre eles, e o <code>flex-wrap</code> deixa o menu quebrar em telas estreitas.</p>
+      </article>
+    </section>
+
+    <aside id="populares" aria-labelledby="titulo-populares">
+      <h2 id="titulo-populares">Posts populares</h2>
+      <ul>
+        <li><a href="#html-semantico">HTML com sentido</a></li>
+        <li><a href="#flexbox">Um menu lado a lado</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="rodape">
+    <p class="limite">&copy; 2026 Ponto e Vírgula. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

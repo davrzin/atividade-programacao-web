@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de IMC | Questão 26</title>
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="pagina pagina-estreita cabecalho">
+    <p class="faixa">
+      <span class="selo">Questão 26</span>
+      <a class="voltar" href="../index.html">Voltar aos exercícios</a>
+    </p>
+    <h1>Calculadora de IMC</h1>
+    <p class="introducao">Informe o peso em quilogramas e a altura em metros. Use vírgula ou ponto para separar as casas decimais.</p>
+  </header>
+
+  <main class="pagina pagina-estreita">
+    <form class="painel" id="form-imc" novalidate>
+      <div class="grade-campos">
+        <div class="campo">
+          <label for="peso">Peso (kg)</label>
+          <input class="controle" id="peso" name="peso" type="text" inputmode="decimal" placeholder="Ex. 70" required>
+        </div>
+        <div class="campo">
+          <label for="altura">Altura (m)</label>
+          <input class="controle" id="altura" name="altura" type="text" inputmode="decimal" placeholder="Ex. 1,75" required>
+        </div>
+      </div>
+      <div class="acoes">
+        <button class="botao" type="submit">Calcular</button>
+      </div>
+      <p class="erro" id="erro" role="alert"></p>
+      <output class="resultado-imc" id="resultado" for="peso altura"></output>
+    </form>
+  </main>
+</body>
+</html>

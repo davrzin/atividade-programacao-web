@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lista de tarefas | Questão 28</title>
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="pagina pagina-estreita cabecalho">
+    <p class="faixa">
+      <span class="selo">Questão 28 · Desafio integrador</span>
+      <a class="voltar" href="../index.html">Voltar aos exercícios</a>
+    </p>
+    <h1>Lista de tarefas</h1>
+    <p class="introducao">Adicione uma tarefa e marque a caixa ao lado quando terminar.</p>
+  </header>
+
+  <main class="pagina pagina-estreita">
+    <div class="painel">
+      <form class="campo" id="form-tarefa" novalidate>
+        <label for="nova-tarefa">Nova tarefa</label>
+        <div class="linha-tarefa">
+          <input class="controle" id="nova-tarefa" name="tarefa" type="text" required
+            placeholder="Ex. Revisar os exercícios" aria-describedby="erro-tarefa">
+          <button class="botao" type="submit">Adicionar</button>
+        </div>
+        <p class="erro" id="erro-tarefa" role="alert"></p>
+      </form>
+
+      <section class="area-tarefas" aria-labelledby="titulo-tarefas">
+        <h2 id="titulo-tarefas">Minhas tarefas</h2>
+        <div class="barra-tarefas">
+          <div class="filtros" role="group" aria-label="Filtrar tarefas">
+            <button class="botao botao-secundario" type="button" data-filtro="todas" aria-pressed="true">Todas</button>
+            <button class="botao botao-secundario" type="button" data-filtro="pendentes" aria-pressed="false">Pendentes</button>
+            <button class="botao botao-secundario" type="button" data-filtro="concluidas" aria-pressed="false">Concluídas</button>
+          </div>
+          <p id="contador-pendentes" class="contador-pendentes" role="status">0 tarefas pendentes</p>
+        </div>
+
+        <ul class="lista-tarefas" id="tarefas" aria-label="Tarefas"></ul>
+        <p class="estado-vazio" id="estado-vazio">Adicione sua primeira tarefa.</p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
